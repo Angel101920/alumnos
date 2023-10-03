@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Cédula</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<p class="texto">
+<center>
+ <body>
+<!-- formulario -->
+<form method="post" enctype="text/plane">
+
+<table border="0" align="center" width="1490" height="160">
+        <tr>
+                  <td width="20%" height="30%" align="center">
+                          <img src="img/logo.png" width="50%">
+                  </td>
+                  <td>
+                                <table border="0" width="100%">
+                                        <td>
+                                                <h2>CÉDULA DE REGISTRO Y ACTUALIZACION DE DATOS</h2>
+                                        </td>
+                                </table>
+                                <table border="0" width="90%" align="center">
+                                        <td width="50%">
+                                                <label for="cicloEscolar">CICLO ESCOLAR:</label>
+                                                <input type="text" id="cicloEscolar" name="cicloEscolar" required>
+                                        </td>
+                                        <td>
+                                                <label for="fecha">FECHA:</label>
+                                                <input type="date" id="fecha" name="fecha" required>
+                                        </td>
+                                </table>
+                </td>
+                <td width="10%">
+                        <table border="2" width="70%" height="90%">
+                                <tr>
+                                        <td></td>
+                                </tr>
+                        </table>
+                </td>
+          </tr>
+</table>
+<table border="5" cellspacing="1" cellpadding="15">
+        <td>
+                <table border="0" align="center" width="1450"bgcolor="white">
+                        <td width="50%">
+                                <p class="s">DATOS GENERALES DEL ALUMNO(A) </p>
+                        </td>
+                        <td>
+                                <label for="nombre">NIA:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                        </td>
+        </td>
+</table>
+<table border="0" width="100%" align="center">
+                <td width="33%">
+                        <label for="apellidoPaterno">Apellido Paterno:</label>
+                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+                </td>
+                <td>
+                         <label for="apellidoMaterno">Apellido Materno:</label>
+                         <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+
+                </td>
+                <td>
+                      <label for="nombre">Nombre(s):</label>
+                      <input type="text" id="nombre" name="nombre" required>
+                </td>
+</table>
+<table border="0" width="100%">
+        <td width="50%">
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+        </td>
+        <td>
+              <label for="fechaNacimiento">Fecha de Nacimiento</label>
+              <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        </td>
+</table>
+<table border="0" width="100%">
+        <td width="50%">
+                <label for="entidadMaterna">Entidad Materna:</label>
+                <input type="text" id="entidadMaterna" name="entidadMaterna" required>
+
+        </td>
+        <td>
+              <label for="curp">CURP:</label>
+              <input type="text" id="curp" name="curp" required maxlength="18" style="text-transform: uppercase;">
+        </td>
+</table>
+<table border="0" width="100%">
+        <td width="50%">
+             <label for="tipoSangre">Tipo de Sangre:</label>
+             <input type="text" id="tipoSangre" name="tipoSangre" required>
+        </td>
+        <td>
+                <label for="lenguaMaterna">Lengua Materna:</label>
+                <input type="text" id="lenguaMaterna" name="lenguaMaterna" required>
+        </td>
+</table>
+<table width="100%">
+        <td>
+                <label for="discapacidad">Discapacidad / Amplitud Diferenciada:</label>
+                <input type="text" id="discapacidad" name="discapacidad" required>
+        </td>
+</table>
+<table>
+
+        <td>
+                <br>
+                DOMICILIO
+        </td>
+</table>
+<table width="100%" border="0">
+        <td width="50%">
+                <label for="entidad">Entidad:</label>
+                <input type="text" id="entidad" name="entidad" required>
+        </td>
+        <td>
+                <label for="municipio">Municipio:</label>
+                <input type="text" id="municipio" name="municipio" required>
+        </td>
+</table>
+<table width="100%" border="0">
+        <td>
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" name="localidad" required>
+        </td>
+</table>
+<table width="100%" border="0">
+        <td>
+                <label for="codigoPostal">Código Postal:</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" maxlength="5" required>
+        </td>
+        <td>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required maxlength="10">
+        </td>
+        <td>
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto">
+
+        </td>
+</table>
+<table border="0" align="center" width="100%">
+       <td align="center" width="50%">
+        <br>
+               <input type="submit" value="Guardar Datos" class="btn">
+       </td>
+       <td align="center">
+        <br>
+
+               <input type="reset" name="BORRAR" class="btn">
+       </td>
+</table>
+</table>
+</form>
+</body>
+</p>
+</html>
